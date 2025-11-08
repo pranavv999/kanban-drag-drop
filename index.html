@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+
+<body>
+    <nav id="nav-bar" class="nav main-padding main-margin-bottom">
+        <div class="nav-left">
+            <!-- <img src="assets/house-blank.png" alt="Home"> -->
+            <i class="fi fi-sr-square-kanban home-icon"></i>
+            <span class="app-name">My Kanban Board</span>
+        </div>
+        <div class="nav-right">
+            <div class="action-btn left-img"><i class="fi fi-br-plus"></i></div>
+            <div class="action-btn right-img"><i class="fi fi-rr-trash"></i></div>
+        </div>
+    </nav>
+
+    <section id="filter-sec" class="filter-sec main-padding main-margin-bottom">
+        <span class="light-text">Filter by:</span>
+        <div class="color-filters">
+            <div class="filter all active-filter">All</div>
+            <div class="filter lightpink"></div>
+            <div class="filter lightgreen"></div>
+            <div class="filter lightblue"></div>
+            <div class="filter lightgrey"></div>
+        </div>
+    </section>
+
+    <section id="tasks" class="tasks main-padding">
+
+        <div id="to-do" class="to-do">
+            <h4>To Do</h4>
+        </div>
+        <div id="in-progress" class="in-progress">
+            <h4>In Progress</h4>
+        </div>
+        <div id="done" class="done">
+            <h4>Done</h4>
+        </div>
+
+
+        <!-- DELETE FROM HERE -->
+
+        <!-- TASK TEMPLATE -->
+
+        <!-- <div class="card-container">
+            <div class="color-code color-code-lightpink"></div>
+            <div class="details">
+                <h3 class="task-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quidem.</h3>
+                <div class="task-id light-text">
+                    <span>Task ID: </span>
+                    <span>#T-101</span>
+                </div>
+                <div class="lock-cont">
+                    <i class="fi fi-sr-lock"></i>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- TASK TEMPLATE -->
+        <!-- Delete till here -->
+    </section>
+
+    <section id="modal" class="modal-container">
+        <div class="modal">
+            <div class="part-one">
+                <p class="title">Add New Task</p>
+                <div class="modal-btn">
+                    <i class="fi fi-sr-cross-circle"></i>
+                </div>
+            </div>
+            <textarea class="light-text" name="input" id="input" placeholder="Enter task description"></textarea>
+
+            <div class="priority">
+                <span class="light-text">Set Priority</span>
+                <div class="color-filters prio-color">
+                    <div class="filter lightpink active-color"></div>
+                    <div class="filter lightgreen"></div>
+                    <div class="filter lightblue"></div>
+                    <div class="filter lightgrey"></div>
+                </div>
+            </div>
+
+            <button id="add-task" class="add-task">Add Task</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
